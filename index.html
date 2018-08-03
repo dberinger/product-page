@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Syrena Sport</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Damion|Passion+One" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="flex-double-hor">
+            <img src="http://syrena.nekla.eu/uploads/pub/pages/page_574/pl_logo_fso_500.jpg" alt="FSO Automaker Logo" id="header-img" width="25px" height="25px">
+            <h1 id="title">Syrena Sport</h1>
+        </div>
+        <nav id="nav-bar">
+            <a href="#specs" class="nav-link">Specifications</a>
+            <a href="#colors" class="nav-link">Colors</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#order" class="nav-link">Order</a>
+        </nav>
+    </header>
+
+    <main>
+        <figure id="syrena-img-container">
+            <img src="https://i.wpimg.pl/730x0/m.autokult.pl/syrena-visual-ba1da88b9abad55b34.jpg" alt="Syrena Sport car" id="syrena-img" class="image">
+            <figcaption>Syrena Sport in 'Juicy Orange' color</figcaption>
+        </figure>
+
+        <article>
+
+            <section id="specs">
+                <h2>Main specifications</h2>
+                <div class="spec-items">
+                    <div class="spec-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <p>4-stroke 2-cylinder air-cooled boxer engine producing 35bhp at 6000 RPM</p>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-cogs"></i>
+                        <p>4-gear manual gearbox and hydraulic-operated clutch</p>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-car"></i>
+                        <p>Fibreglass body on a steel chassis with strengthened floor panel</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--add accessible heading vvv-->
+            <section id="video">
+                <iframe width="516" height="315" src="https://www.youtube.com/embed/NfkXj6DrZDY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </section>
+
+            <section id="colors">
+                <h2>Available colors</h2>
+                <div class="color-items">
+                    <div class="color-item">
+                        <div class="color juicy-orange"></div>
+                        <p class="color-name">Juicy Orange</p>
+                    </div>
+                    <div class="color-item">
+                        <div class="color passion-red"></div>
+                        <p class="color-name">Passion Red</p>
+                    </div>
+                    <div class="color-item">
+                        <div class="color wind-white"></div>
+                        <p class="color-name">Wind White</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pricing">
+                <h2>Pricing</h2>
+                <div class="trim-items">
+                    <div class="trim-item">
+                        <h3>Polish Onion</h3>
+                        <p class="price">$9,999</p>
+                        <ul>
+                            <li>Base model</li>
+                            <li>Alcantara interior</li>
+                            <li>All you can fit - onions (on pickup)</li>
+                        </ul>
+                    </div>
+                    <div class="trim-item">
+                        <h3>Sportololo</h3>
+                        <p class="price">$20,000</p>
+                        <ul>
+                            <li>Performance steering wheel</li>
+                            <li>Extra 50 horsepower</li>
+                            <li>Adidas 3-striped sweatpants for extra power</li>
+                        </ul>
+                    </div>
+                    <div class="trim-item">
+                        <h3>Business Janusz Edition</h3>
+                        <p class="price">$35,000</p>
+                        <ul>
+                            <li>Interior with finest polish leather</li>
+                            <li>Bluetooth headset and navigation</li>
+                            <li>Chrome trim everywhere you like</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="order">
+                <h2>Order your own Syrena Sport</h2>
+                <form action="GET" id="form">
+                    <p>Please leave us your email and we'll get back to you within 24 hours.</p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </section>
+
+        </article>
+
+    </main>
+
+    <div class="color-wrap">
+        <footer>
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Contact</li>
+            </ul>
+            <p id="copyright">Copyright 2018</p>
+        </footer>
+    </div>
+
+</body>
+
+
+</html>
