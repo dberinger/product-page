@@ -15,6 +15,16 @@ section {
     margin: 2em auto;
 }
 
+.shadow {
+    box-shadow: 0px 1px 15px -1px rgba(0, 0, 0, 0.75);
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*HEADER*/
+
+/*--------------------------------------------------------------------------*/
+
 #header {
     margin-top: 1em;
 }
@@ -29,20 +39,21 @@ h2 {
     font-weight: 100;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    margin: 2em 0;
+    line-height: 1.5em;
+}
+
+h2 span {
+    border-right: 3px solid indianred;
+    border-left: 3px solid indianred;
+    padding: 0 1em;
 }
 
 .flex-double-hor {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: baseline;
-}
-
-.nav-link {
-    font-family: "Passion One", cursive;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 0.25em 0.5em;
+    align-items: center;
 }
 
 #nav-bar {
@@ -54,32 +65,85 @@ h2 {
     margin: auto;
 }
 
+.nav-link {
+    font-family: "Passion One", cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0.25em 0.5em;
+    border-bottom: 3px solid transparent;
+}
+
+#nav-bar a:link {
+    color: black;
+}
+
+#nav-bar a:visited {
+    color: lightslategray;
+}
+
+#nav-bar a:hover {
+    color: indianred;
+    border-bottom: 3px solid indianred;
+}
+
+#nav-bar a:active {
+    color: red;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*MAIN PICTURE*/
+
+/*--------------------------------------------------------------------------*/
+
 #syrena-img-container {
     margin: 0;
     padding: 1em 0;
+}
+
+#syrena-img {
+    border: 3px solid indianred;
 }
 
 figcaption {
     font-family: "Damion", cursive;
 }
 
+/*--------------------------------------------------------------------------*/
+
+/*SPECS*/
+
+/*--------------------------------------------------------------------------*/
+
 .fas {
     font-size: 2em;
+    padding-top: 0.5em;
 }
 
 .spec-items {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    background-color: indianred;
+    padding: 1em 0;
 }
 
+
 .spec-item {
+    box-shadow: 0px 0px 10px -1px rgba(162, 166, 189, 1);
     padding: 1em;
     margin: 1em;
-    border: 1px solid dimgray;
     max-width: 300px;
     height: 175px;
+    border-radius: 10px;
+    background-color: white;
 }
+
+/*--------------------------------------------------------------------------*/
+
+/*COLORS*/
+
+/*--------------------------------------------------------------------------*/
 
 .juicy-orange {
     background-color: rgb(253, 185, 76);
@@ -112,19 +176,29 @@ figcaption {
     margin: 1em;
 }
 
+/*--------------------------------------------------------------------------*/
+
+/*PRICING (TRIMS)*/
+
+/*--------------------------------------------------------------------------*/
+
 .trim-items {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    background-color: indianred;
+    padding: 1em 0;
 }
 
 .trim-item {
     text-align: left;
     padding: 1em;
     margin: 1em;
-    border: 1px solid dimgray;
     width: 300px;
     height: 242px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -1px rgba(162, 166, 189, 1);
+    background-color: white;
 }
 
 h3 {
@@ -136,6 +210,16 @@ h3 {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*ORDER (FORM)*/
+
+/*--------------------------------------------------------------------------*/
+
+#order {
+    margin: 2em;
 }
 
 #form {
@@ -155,13 +239,22 @@ h3 {
 #form input {
     border: 1px solid dimgray;
     padding: 0.5em;
+    border-radius: 10px;
 }
 
-#submit {
+#form input[type="submit"] {
     font-size: 1.25em;
     font-family: "Damion", cursive;
-    
+    border: 2px solid indianred;
+    background-color: indianred;
+    color: white;
 }
+
+/*--------------------------------------------------------------------------*/
+
+/*FOOTER*/
+
+/*--------------------------------------------------------------------------*/
 
 footer {
     padding: 1em;
@@ -188,11 +281,27 @@ footer ul li {
 footer ul li:first-child {
     padding-left: 0px;
 }
-#order {
-    margin: 2em;
-}
 
 .color-wrap {
-    background-color: darkslategray;
+    background-color: indianred;
     color: white;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*MEDIA QUERIES*/
+
+/*--------------------------------------------------------------------------*/
+
+@media (min-width: 600px) {
+
+    #nav-bar {
+        font-size: 1.25em;
+        max-width: 600px;
+    }
+
+    footer {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
